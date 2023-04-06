@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿/* Программу, которая из имеющегося массива строк формирует новый массив из строк, 
+ длина которых меньше, либо равна 3 символам.
+
+[“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
+[“1234”, “1567”, “-2”, “computer science”] → [“-2”]
+[“Russia”, “Denmark”, “Kazan”] → []*/
+
 Console.WriteLine("Hello, World!");
