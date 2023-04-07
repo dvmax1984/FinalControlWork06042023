@@ -6,3 +6,21 @@
 [“Russia”, “Denmark”, “Kazan”] → []*/
 
 Console.WriteLine("Hello, World!");
+
+string[] array = {"Hello", "2", "world"};
+
+int n = 0;
+
+for (int m=0; m < array.Length; m++)
+{
+    string[] result;
+    
+    //LastIndexOf: находит индекс последнего вхождения символа или подстроки в строке
+    
+    if (array[m].Length <= 3)
+    {
+        result[n] = array[m];
+        n = n + 1;
+    }
+}
+
