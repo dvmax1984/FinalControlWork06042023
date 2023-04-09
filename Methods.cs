@@ -34,9 +34,16 @@ public static class Methods
 
             if (m == array.Length - 1) Array.Resize(ref result, n);
             /*  Второй вариант:
-                подсчитать число n = кол-во строк с длиной до 3х символов.
+                подсчитать число n = кол-во строк с длиной до 3х символов вкл.
                 и создать массив result длинной n, а затем заполнить его */
         }
         return result;
+    }
+
+    public static void initStartApp()
+    {
+        Console.ResetColor();
+        Console.ForegroundColor = ConsoleColor.Gray;
+        Console.WriteLine("\n Вывод из массива строк длиной <= 3 символам, в новый массив и на печать \n");
     }
 }

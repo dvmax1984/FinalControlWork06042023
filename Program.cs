@@ -6,9 +6,14 @@
 [“Russia”, “Denmark”, “Kazan”] → []*/
 
 using static Methods;
-Console.WriteLine("\n Вывод из массив строк длиной <= 3 символам, в новый массив и на печать \n");
+using static MethodsInput;
 
-string[] array = { "Hello", "2", "world", ":-)" };
+initStartApp();
+
+int arrSize = GetNumber("Введите количество строк: ");
+string[] array = new string[arrSize];
+
+array = GetString(array);
 
 Console.WriteLine("---[ Исходный массив ]---");
 Console.WriteLine(PrintArray(array));
@@ -17,5 +22,4 @@ string[] result = GetFromArray(array);
 
 Console.WriteLine("---[  Результат ]---");
 Console.WriteLine(PrintArray(result));
-
 
